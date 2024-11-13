@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'Rozonova';
+    src: url('fonts/RozanovaHUM-Demo-Thin.woff2') format('woff2'),
+        url('fonts/RozanovaHUM-Demo-Thin.woff') format('woff'),
+        url('fonts/RozanovaHUM-Demo-Thin.otf') format('opentype'); /* .otf pode ser usado, mas o uso de .woff2 ou .woff é preferido */
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,48 +19,51 @@ nav img {
 
 nav a {
     text-decoration: none;
-    border: 3px solid #875F16;
-    color: #6B010F;
-    background-color: #B8AA8F;
+    color: #FFF3E0;
     padding: 5px;
 }
 
 div#is {
-    font-size: 25px;
+    font-size: 18px;
 }
 a#ini,a#sobre {
-    box-shadow: 3px 3px 5px black;
     margin: 10px;
+    border-bottom: 1px solid black;
 }
 
 a#ini:hover,a#sobre:hover {
-    font-size: 30px;
+    font-size: 26px;
     transition: 0.2s;
 }
 
 a#wpp:hover {
-    font-size: 40px;
+    font-size: 25px;
     transition: 0.2s;
 }
 
 a#wpp {
-    font-size: 35px;
+    font-size: 23px;
     box-shadow: 3px 3px 5px black;
+    border: 3px solid #Bf9658;
+    color: #FFF3E0;
+    font-weight: bold;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
-    background-color: #6B010F;
+    padding: 20px 0px 0px 0px;;
+    background-color: #875F16;
+    font-family: 'Rozonova';
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFF3E0;
+    background-color: #875F16;
+    
 }
 
 header img {
@@ -62,15 +75,28 @@ header img {
 }
 
 header h1 {
-    width: 500px;
-    color: #875F16;
-    text-align: justify;
+    width: 700px;
+    color: #FFF3E0;
+    text-align: center;
     text-shadow: 1px 1px 1px black;
+    font-size: 50px;
+    padding-bottom: 10px;
+    font-family: "Mukta Mahee", sans-serif;
+}
+
+header p {
+    width: 700px;
+    color: #FFF3E0;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: "Mukta Mahee", sans-serif;
 }
 
 a#consulta{
     border: 3px solid #5a400f;
-    background-color: #875F16;
+    background-color: #6B010F;
     color: #ddd0b6;
     text-decoration: none;
     font-size: 25px;
@@ -88,58 +114,62 @@ a#consulta:hover {
 }
 
 main {
-    background-color: #875F16;
+    background-color: #FFF3E0;
+    padding: 40px;
 }
+
+main h2 {
+    text-align: center;
+    padding: 0px 10px 40px 10px;
+    font-size: 30px;
+    color: #875F16;
+    text-shadow: 1px 1px 1px #573d0e;
+}
+
 
 main h2#me {
-    padding: 50px;
     text-align: center;
-    font-size: 40px;
-    color: #FFF3E0;
-    text-shadow: 1px 1px 1px black;
+    font-size: 24px;
+    color: #6B010F;
+    padding-bottom: 20px;
 }
 
-div.list {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+main ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 5px;
 }
 
-div.list-item {
-    width: 15%; 
-    height: 150px;
-    margin-bottom: 10px;
-    background-color: #6B010F;
-    padding: 15px;
-    text-align: center;
-    border: 2px solid #875F16;
-    text-align: justify;
-}
-
-div.list-item li {
+main li {
+    border: 1px solid black;
     list-style-type: none;
-}
-
-main h2#atend{
     padding: 20px;
+    background-color: #Bf9658;             /* Cor de fundo dos boxes */
     text-align: center;
-    font-size: 35px;
-    color: #FFF3E0;
-    text-shadow: 1px 1px 1px black;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #333;
+    height: 150px;                         /* Altura fixa para uniformizar os boxes */
+    display: flex;
+    align-items: center;                   /* Centraliza verticalmente o texto */
+    justify-content: center;               /* Centraliza horizontalmente o texto */
 }
 
-footer {
+
+section.fale {
     background-color: #B8AA8F;
     text-align: center;
     padding: 30px;
 }
 
-footer h3 {
+section.fale h3 {
     font-size: 30px;
 }
 
-footer a {
+section.fale a {
     text-decoration: none;
     border: 3px solid #5a400f;
     background-color: #875F16;
@@ -147,12 +177,46 @@ footer a {
     padding: 5px;
 }
 
-footer a:hover {
+section h3#h3{
+    padding-bottom: 20px;
+}
+
+section.fale a:hover {
     font-size: 40px;
     transition: 0.2s;
 }
 
-footer a {
+section.fale a {
     font-size: 35px;
     box-shadow: 3px 3px 5px black;
+}
+
+footer {
+    background-color: #Bf9658;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    color: #FFF3E0;
+}
+
+div.contato {
+    display: flex;
+    flex-direction: column;
+}
+
+div.contato a {
+    text-decoration: none;
+    color: #FFF3E0;
+}
+
+footer h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+footer.redes{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
