@@ -32,13 +32,13 @@ a#ini,a#sobre {
 }
 
 a#ini:hover,a#sobre:hover {
-    font-size: 26px;
-    transition: 0.2s;
+    transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+    transition: transform 0.2s; 
 }
 
 a#wpp:hover {
-    font-size: 25px;
-    transition: 0.2s;
+    transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+    transition: transform 0.2s; 
 }
 
 a#wpp {
@@ -109,14 +109,16 @@ a#consulta{
 }
 
 a#consulta:hover {
-    font-size: 30px;
-    transition: 0.2s;
+    transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+    transition: transform 0.2s; 
 }
 
 main {
     background-color: #FFF3E0;
     padding: 40px;
     font-family: "Mukta Mahee", sans-serif;
+    color: #FFF3E0;
+    text-shadow: 1px 1px 1px black;
 }
 
 main h2 {
@@ -152,7 +154,7 @@ main div#servico li {
     text-align: center;
     box-sizing: border-box;
     font-size: 20px;
-    color: #333;
+    color: #FFF3E0;
     height: 150px;
     display: flex;
     align-items: center;
@@ -176,6 +178,7 @@ main div.ect li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+        color: #FFF3E0;
 }
 
 main div.ect ul h3 {
@@ -236,17 +239,26 @@ section p{
 }
 
 section.fale a:hover {
-    font-size: 40px;
-    transition: 0.2s;
+    transform: scale(1.1);  /* Aumenta o tamanho em 10% */
+    transition: transform 0.2s; 
 }
 
 section.fale a {
-    font-size: 35px;
+    border: 3px solid #5a400f;
+    background-color: #6B010F;
+    color: #ddd0b6;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 10px;
     box-shadow: 3px 3px 5px black;
 }
 
 footer {
-    background-color: #Bf9658;
+    background-color: #875F16;
     display: flex;
     justify-content: space-around;
     padding: 50px;
