@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    border: 3px solid #875F16;
+    color: #6B010F;
+    background-color: #B8AA8F;
+    padding: 5px;
+}
+
+div#is {
+    font-size: 25px;
+}
+a#ini,a#sobre {
+    box-shadow: 3px 3px 5px black;
+    margin: 10px;
+}
+
+a#ini:hover,a#sobre:hover {
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+a#wpp:hover {
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+a#wpp {
+    font-size: 35px;
+    box-shadow: 3px 3px 5px black;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #6B010F;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF3E0;
+}
+
+header img {
+    width: 350px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+header h1 {
+    width: 500px;
+    color: #875F16;
+    text-align: justify;
+    text-shadow: 1px 1px 1px black;
+}
+
+a#consulta{
+    border: 3px solid #5a400f;
+    background-color: #875F16;
+    color: #ddd0b6;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 10px;
+    box-shadow: 3px 3px 5px black;
+}
+
+a#consulta:hover {
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+main {
+    background-color: #875F16;
+}
+
+main h2#me {
+    padding: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #FFF3E0;
+    text-shadow: 1px 1px 1px black;
+}
+
+div.list {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.list-item {
+    width: 15%; 
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: #6B010F;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #875F16;
+    text-align: justify;
+}
+
+div.list-item li {
+    list-style-type: none;
+}
+
+main h2#atend{
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: #FFF3E0;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer {
+    background-color: #B8AA8F;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h3 {
+    font-size: 30px;
+}
+
+footer a {
+    text-decoration: none;
+    border: 3px solid #5a400f;
+    background-color: #875F16;
+    color: #ddd0b6;
+    padding: 5px;
+}
+
+footer a:hover {
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+footer a {
+    font-size: 35px;
+    box-shadow: 3px 3px 5px black;
+}
