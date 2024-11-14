@@ -3,9 +3,19 @@
     font-family: 'Rozonova';
     src: url('fonts/RozanovaHUM-Demo-Thin.woff2') format('woff2'),
         url('fonts/RozanovaHUM-Demo-Thin.woff') format('woff'),
-        url('fonts/RozanovaHUM-Demo-Thin.otf') format('opentype'); /* .otf pode ser usado, mas o uso de .woff2 ou .woff é preferido */
+        url('fonts/RozanovaHUM-Demo-Thin.otf') format('opentype'); 
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+    --cor1: #6B010F;
+    --cor2: #Bf9658;
+    --cor3: #B8AA8F;
+    --cor4: #875F16;
+    --cor5: #FFF3E0;
+    --fonte1: 'Rozonova', sans-serif;
+    --fonte2: "Mukta Mahee", sans-serif;
 }
 
 *{
