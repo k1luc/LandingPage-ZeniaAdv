@@ -9,17 +9,11 @@
 }
 
 :root {
-    --cor0: #246AD4;
-    --cor1: #194A94;
-    --cor2: #0C2447;
-    --cor3: #0E2A54;
-    --cor4: #091A33;
-    --cor5: #FFDBC9;
-    --cor6: #Bf9658;
-    --cor7: #B8AA8F;
-    --cor8: #875F16;
-    --cor9: #FFF3E0;
-    --cor10: #3D0A01;
+    --cor1: #6B010F;
+    --cor2: #Bf9658;
+    --cor3: #B8AA8F;
+    --cor4: #875F16;
+    --cor5: #FFF3E0;
     --fonte1: 'Rozonova';
     --fonte2: "Mukta Mahee";
 }
@@ -31,7 +25,7 @@
 }
 
 nav {
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     font-family: var(--fonte2);
     display: flex;
     align-items: center;
@@ -46,7 +40,7 @@ nav img {
 
 nav a {
     text-decoration: none;
-    color: var(--cor6);
+    color: var(--cor3);
     text-align: center;
     font-size: 18px;
     font-weight: bold;
@@ -63,7 +57,7 @@ a.consulta:hover {
 }
 
 header {
-    background-color: var(--cor3);
+    background-color: var(--cor1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,12 +73,12 @@ header div.adv {
     width: 700px;
     text-align: center;
     font-family: var(--fonte2);
-    color: var(--cor7);
+    color: var(--cor3);
 }
 
 header div.adv h1 {
     font-size: 40px;
-    color: var(--cor6);
+    color: var(--cor2);
 }
 
 header div.adv p {
@@ -116,7 +110,7 @@ main {
 }
 
 main h2 {
-    color: var(--cor2);
+    color: var(--cor4);
     font-size: xx-large;
 }
 
@@ -131,11 +125,11 @@ main div.servico ul {
 }
 
 main div.servico ul li {
-    background-color: var(--cor10);
+    background-color: var(--cor1);
     width: 400px;
     border-radius: 12px;
     height: 250px;
-    box-shadow: 2px 2px 5px var(--cor2);
+    box-shadow: 2px 2px 5px var(--cor3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +138,7 @@ main div.servico ul li {
     margin: 10px;
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
-    color: var(--cor9);
+    color: var(--cor5);
     text-shadow: 1px 1px 3px black;
 }
 
@@ -154,9 +148,9 @@ main div.servico ul li:hover {
 }
 
 div h2#cls{
-    padding-top: 50px;
+    padding: 50px;
     margin-bottom: 20px;
-    background-color: var(--cor2);
+    background-color: var(--cor4);
     color: var(--cor5);
 }
 
@@ -169,7 +163,7 @@ section {
     background-color: var(--cor3);
     display: flex;
     align-items: center;
-    color: var(--cor9);
+    color: var(--cor5);
     padding: 30px;
     text-align: center;
 }
@@ -216,8 +210,8 @@ div#texto p {
 }
 
 footer {
-    background-color: #0D1B26;
-    color: var(--cor9);
+    background-color: var(--cor1);
+    color: var(--cor5);
     display: flex;
     justify-content: space-around;
     padding: 30px;
@@ -231,106 +225,143 @@ footer div.contato {
 
 footer div.contato a{
     text-decoration: none;
-    color: var(--cor9);
+    color: var(--cor5);
 }
-/* Responsividade para telas pequenas (celulares) */
+
+/* Responsividade para dispositivos móveis (max-width: 768px) */
 @media (max-width: 768px) {
-    /* Oculta o menu de navegação */
+    /* Nav - ocultar em telas pequenas */
     nav {
-        display: none; /* Oculta o nav em telas pequenas */
+        display: none;
     }
 
-    /* Ajusta o header para telas menores */
+    /* Header */
     header {
-        flex-direction: column-reverse;
-        padding: 10px;
+
+        padding: 15px;
+        text-align: center;
     }
 
     header img {
-        width: 200px; /* Reduz o tamanho da imagem no header */
+        width: 180px; /* Ajusta o tamanho da imagem */
         margin: 10px 0;
     }
 
     header div.adv {
-        width: 100%;
+        width: 90%;
         padding: 10px;
-        text-align: center;
     }
 
     header div.adv h1 {
-        font-size: 28px;
+        font-size: 26px;
+        margin-bottom: 10px;
     }
 
-    header div.adv p, header div.adv a {
+    header div.adv p {
         font-size: 16px;
     }
 
-    /* Ajustes para a seção main */
-    main div.servico ul {
-        flex-direction: column;
-        padding: 0;
+    header div.adv a {
+        font-size: 16px;
+        padding: 8px;
+        margin-top: 10px;
     }
 
-    main div.servico ul li {
-        width: 100%;
-        height: auto;
-        padding: 15px;
-        font-size: 20px;
+    /* Section */
+    section {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        padding: 0px;
     }
 
-    /* Ajustes para a seção "Conheça" */
+    section img {
+        display: none;
+    }
+
+    section a.quero {
+        font-size: 16px;
+        padding: 8px;
+    }
+
     div#texto {
-        width: 90%;
-        padding: 10px;
-        margin: 0 auto;
+        width: 100%;
     }
 
-    div#texto h2 {
-        font-size: 32px;
-    }
-
-    div#texto p {
-        font-size: 18px;
-        text-align: justify;
-    }
-
-    /* Ajustes para o footer */
+    /* Footer */
     footer {
         flex-direction: column;
-        padding: 15px;
+        padding: 20px;
         text-align: center;
     }
 
+    footer div.contato {
+        align-items: center;
+    }
+
     footer div.contato a {
-        font-size: 16px;
+        font-size: 14px;
         margin: 5px 0;
     }
 }
 
-/* Responsividade para tablets */
+/* Responsividade para tablets (telas médias, max-width: 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
+    /* Nav */
     nav {
-        padding: 10px 30px;
+        padding: 15px 50px;
+        flex-wrap: wrap;
+    }
+
+    nav img {
+        width: 120px; /* Ajusta o tamanho do logotipo */
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    /* Header */
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    header div.adv {
+        width: 80%;
     }
 
     header div.adv h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
-    header img {
-        width: 250px;
+    header div.adv p {
+        font-size: 18px;
     }
 
-    main div.servico ul li {
-        width: 48%;
+    /* Section */
+    section {
+        padding: 20px;
+        flex-wrap: wrap;
     }
 
-    div#texto h2 {
-        font-size: 40px;
+    section img {
+        width: 220px; /* Ajusta o tamanho da imagem */
+        margin-bottom: 10px;
     }
 
+    section a.quero {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    /* Footer */
     footer {
         padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    footer div.contato a {
+        font-size: 16px;
+        padding: 5px 0;
     }
 }
-
