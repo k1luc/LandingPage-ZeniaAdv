@@ -35,8 +35,9 @@ nav {
     font-family: var(--fonte2);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 50px 0px 50px;
+    padding: 20px 150px 0px 150px;
 }
 
 nav img {
@@ -61,27 +62,12 @@ a.consulta:hover {
     transition: 0.2s;
 }
 
-div.naveg a:hover {
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-
-div.naveg a {
-    padding: 10px;
-    display: inline-block;
-    transition: transform 0.2s ease-in-out;
-}
-
-div.naveg a:hover {
-    transform: scale(1.1);
-}
-
-
 header {
     background-color: var(--cor3);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 header img {
@@ -185,12 +171,33 @@ section {
     align-items: center;
     color: var(--cor9);
     padding: 30px;
+    text-align: center;
 }
+
+section a.quero {
+    border: 1px solid black;
+    text-decoration: none;
+    color: var(--cor5);
+    background-color: var(--cor4);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--fonte2);
+    box-shadow: 1px 2px 5px black;
+    display: inline-block;
+}
+
+section a.quero:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
 
 div.conheca {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap-reverse;
 }
 
 div#texto {
@@ -226,3 +233,104 @@ footer div.contato a{
     text-decoration: none;
     color: var(--cor9);
 }
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    /* Oculta o menu de navegação */
+    nav {
+        display: none; /* Oculta o nav em telas pequenas */
+    }
+
+    /* Ajusta o header para telas menores */
+    header {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    header img {
+        width: 200px; /* Reduz o tamanho da imagem no header */
+        margin: 10px 0;
+    }
+
+    header div.adv {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    header div.adv h1 {
+        font-size: 28px;
+    }
+
+    header div.adv p, header div.adv a {
+        font-size: 16px;
+    }
+
+    /* Ajustes para a seção main */
+    main div.servico ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    main div.servico ul li {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    /* Ajustes para a seção "Conheça" */
+    div#texto {
+        width: 90%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    div#texto h2 {
+        font-size: 32px;
+    }
+
+    div#texto p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    /* Ajustes para o footer */
+    footer {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    footer div.contato a {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+}
+
+/* Responsividade para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 10px 30px;
+    }
+
+    header div.adv h1 {
+        font-size: 35px;
+    }
+
+    header img {
+        width: 250px;
+    }
+
+    main div.servico ul li {
+        width: 48%;
+    }
+
+    div#texto h2 {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
